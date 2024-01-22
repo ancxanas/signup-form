@@ -9,10 +9,61 @@
   <body>
     <div class="container">
       <div class="left">
-        <img
-          src="./assets/harrison-chang-WNeI-A90sMM-unsplash.jpg"
-          alt="Uh oh!!"
-        />
+        <img class="bg" src="./assets/bg.jpg" alt="Uh oh!!" />
+        <p class="credit">
+          Photo by
+          <a
+            href="https://unsplash.com/@priscilladupreez?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Priscilla Du Preez 🇨🇦</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/photo-of-boston-fern-6gWMviz-vSo?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+        <svg
+          class="logo"
+          xmlns="http://www.w3.org/2000/svg"
+          width="128"
+          height="128"
+          xml:space="preserve"
+        >
+          <path
+            fill="#FFFFF0"
+            d="M80.139 103.801H47.715V55.703H30.227V23.282h67.4v32.421H80.139v48.098zm-28.424-4h24.424V51.703h17.488V27.282h-59.4v24.421h17.488v48.098zM0 23.279h5.362v4H0zM9.901 23.279h5.363v4H9.901zM19.799 23.279h5.364v4h-5.364zM102.838 23.279h5.363v4h-5.363zM112.736 23.279h5.363v4h-5.363zM122.637 23.279H128v4h-5.363zM76.139 3.551h4v5.363h-4zM76.139 13.452h4v5.364h-4z"
+          />
+          <g>
+            <path
+              fill="#FFFFF0"
+              d="M47.715 3.551h4v5.363h-4zM47.715 13.452h4v5.364h-4z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#FFFFF0"
+              d="M76.139 109.186h4v5.365h-4zM76.139 119.086h4v5.363h-4z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#FFFFF0"
+              d="M47.715 109.186h4v5.365h-4zM47.715 119.086h4v5.363h-4z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#FFFFF0"
+              d="M0 51.703h5.362v4H0zM9.901 51.703h5.363v4H9.901zM19.799 51.703h5.364v4h-5.364z"
+            />
+          </g>
+          <g>
+            <path
+              fill="#FFFFF0"
+              d="M102.838 51.703h5.363v4h-5.363zM112.736 51.703h5.363v4h-5.363zM122.637 51.703H128v4h-5.363z"
+            />
+          </g>
+        </svg>
       </div>
       <div class="right">
         <div>
@@ -25,22 +76,22 @@
         </div>
         <p class="para3">Let's do this!</p>
         <div class="form">
-          <form>
+          <form id="form">
             <div class="row">
               <div class="first-row">
                 <div class="input-div">
                   <label for="first-name">FIRST NAME</label>
-                  <input id="first-name" type="text" />
+                  <input id="first-name" type="text" required />
                 </div>
                 <div class="input-div">
                   <label for="last-name">LAST NAME</label>
-                  <input id="last-name" type="text" />
+                  <input id="last-name" type="text" required />
                 </div>
               </div>
               <div class="second-row">
                 <div class="input-div">
                   <label for="email">EMAIL</label>
-                  <input id="email" type="email" />
+                  <input id="email" type="email" required />
                 </div>
                 <div class="input-div">
                   <label for="phone">PHONE NUMBER</label>
@@ -50,11 +101,21 @@
               <div class="third-row">
                 <div class="input-div">
                   <label for="password">PASSWORD</label>
-                  <input id="password" type="password" />
+                  <input
+                    class="password-input error"
+                    id="password"
+                    type="password"
+                    required
+                  />
                 </div>
                 <div class="input-div">
                   <label for="confirm-password">CONFIRM PASSWORD</label>
-                  <input id="confirm-password" type="password" />
+                  <input
+                    class="password-input error"
+                    id="confirm-password"
+                    type="password"
+                    required
+                  />
                 </div>
               </div>
             </div>
@@ -65,7 +126,7 @@
         </div>
         <p class="para4">
           Already have an account?
-          <a>Log in</a>
+          <a class="link">Log in</a>
         </p>
       </div>
     </div>

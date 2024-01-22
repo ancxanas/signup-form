@@ -405,11 +405,25 @@ p {
   padding-left: 10px;
 }
 
+div > label {
+  font-weight: bold;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding-bottom: 0.2em;
+}
+
 input {
   width: max(100%, 1fr);
   height: auto;
+  border: 1px solid #e5e7eb;
+  border-radius: 3px;
+  padding: 0.2em;
 }
 
+input:focus {
+  border: 1px solid #8da3cf;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .row {
   box-shadow: 0 5px 6px -6px #000;
 }
@@ -425,10 +439,40 @@ button {
   font-weight: bold;
 }
 
+.link {
+  color: #596d48;
+  cursor: pointer;
+}
+
 form > div {
   padding: 10px;
 }
 
-img {
+.left {
+  position: relative;
+}
+
+.bg {
   height: 100vh;
+  display: block;
+}
+
+.credit {
+  position: absolute;
+  bottom: 0;
+  transform: translateX(10%);
+  color: #fff;
+}
+
+.logo {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  z-index: 1;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
